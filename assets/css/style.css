@@ -35,6 +35,7 @@ h2 {
   padding: 17px 10px;
   border-radius: 25px;
 }
+/* Action  */
 .info-menu:hover {
   box-shadow: 0px 18px 36px rgba(0, 0, 0, 0.05);
 }
@@ -43,7 +44,6 @@ h2 {
   box-shadow: 0px 18px 36px rgba(0, 0, 0, 0.05);
 }
 
-/* action  */
 .btn:hover {
   opacity: 0.9;
 }
@@ -60,7 +60,8 @@ h2 {
 .btn-read a:hover {
   background-color: #ffb900;
 }
-/* ======first-page====== */
+
+/* ======First-page====== */
 
 /* header */
 .header-fixed {
@@ -70,7 +71,7 @@ h2 {
   background-color: #fffcf4;
   padding-bottom: 10px;
 }
-header .logo{
+header .logo {
   margin-top: 14px;
 }
 .header {
@@ -245,8 +246,8 @@ header .logo{
 .data strong:nth-child(2) {
   margin-left: 28px;
 }
-/* popular */
-
+/* ====== Second page */
+/* Header popular */
 .popular .content {
   margin-top: 200px;
 }
@@ -271,7 +272,7 @@ header .logo{
   color: #5f5b53;
   margin-top: 16px;
 }
-
+/* List popular */
 .menu-popular {
   display: flex;
   justify-content: space-between;
@@ -327,8 +328,8 @@ header .logo{
   text-align: center;
   color: #ffffff;
 }
-
-/* review */
+/* ====== Third page ======  */
+/* Review */
 .review {
   background-color: #2e2100;
   margin-top: 200px;
@@ -363,6 +364,8 @@ header .logo{
 .action-reviewer {
   margin-top: 28px;
 }
+
+/* Content review */
 .info-review {
   width: 770px;
 }
@@ -374,7 +377,7 @@ header .logo{
   line-height: 40px;
   color: #ffffff;
 }
-
+/* ====== Four page ====== */
 /* platform */
 .platform .content {
   margin-top: 200px;
@@ -402,7 +405,7 @@ header .logo{
   height: 404px;
   object-fit: cover;
 }
-
+/* Lesson */
 .info-platform {
   margin-left: 130px;
   margin-top: 58px;
@@ -471,8 +474,8 @@ header .logo{
   text-align: center;
   color: #ffffff;
 }
-
-/* our blog */
+/* ====== Fifth page ====== */
+/* Header our blog */
 
 .our-blog {
   margin-top: 200px;
@@ -486,6 +489,8 @@ header .logo{
 .info-blog {
   text-align: center;
 }
+
+/* List blog */
 .info-colump-blog {
   width: 370px;
   border: 1px solid #e2dfda;
@@ -550,6 +555,7 @@ header .logo{
   line-height: 28px;
   color: #171100;
 }
+
 .btn-read {
   margin-top: 12px;
 }
@@ -570,8 +576,8 @@ header .logo{
   text-align: center;
   padding-bottom: 96px;
 }
-
-/* footer */
+/* ====== Last page ====== */
+/* Footer */
 
 .footer {
   background: #2e2100;
