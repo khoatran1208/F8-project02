@@ -614,9 +614,9 @@ header .logo{
 
 .colump-footer a {
   display: block;
-  margin-top: 28px;
   font-weight: 400;
   font-size: 14px;
+  padding-bottom: 12px;
   color: #bfbcb2;
 }
 
@@ -624,6 +624,7 @@ header .logo{
   width: 130px;
   height: 1px;
   margin-top: 14px;
+  margin-bottom: 28px;
   background: #59554b;
 }
 
@@ -650,8 +651,8 @@ header .logo{
 .colump-footer-3 p {
   font-size: 14px;
   line-height: 26px;
-  margin-top: 20px;
   color: #bfbcb2;
+  margin-bottom: 12px;
 }
 .colump-footer-3 strong {
   font-weight: 600;
