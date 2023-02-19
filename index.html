@@ -17,7 +17,11 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Sen:wght@400;700&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="./assets/font/fontawesome/fontawesome-free-6.3.0-web/css/all.min.css">
+    <link rel="stylesheet" href="./assets/css/grid.css" />
     <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+
     <title>Project-02</title>
   </head>
   <body>
@@ -25,56 +29,84 @@
       <!-- ======= First page =======  -->
       <!-- Header -->
       <div class="header-fixed">
-        <div class="content">
-          <header class="header">
-            <a class="logo" href="#">
-              <img src="./assets/img/Lesson..svg" alt=""
-            /></a>
-            <div class="sidebar">
-              <div class="sidebar-action">
+        <div class="grid wide content">
+          <div class="row">
+            <div class="col l-12 m-12 c-0">
+              <header class="header">
+                <a class="logo" href="#">
+                  <img src="./assets/img/Lesson..svg" alt=""
+                /></a>
+                <div class="sidebar">
+                  <div class="sidebar-action">
+                    <a href="#">Home</a>
+                    <a href="#courses">Courses</a>
+                    <a href="#reviews">Reviews</a>
+                    <a href="#blog">Blog</a>
+                  </div>
+                  <a class="btn sidebar-btn" href="#!"> Sign Up</a>
+                </div>
+              </header>
+            </div>
+            <!-- nav mobile -->
+            <label for="nav-mobile-input" class="col l-0 m-0 c-12">
+              <i class="fa-solid fa-bars"></i>
+            </label>
+            <input type="checkbox" hidden class="nav-input" id="nav-mobile-input">
+            
+            <label for="nav-mobile-input" class="overlay"></label>
+            <div class="sidebar-mobile">
+              
                 <a href="#">Home</a>
                 <a href="#courses">Courses</a>
                 <a href="#reviews">Reviews</a>
                 <a href="#blog">Blog</a>
-              </div>
-              <a class="btn sidebar-btn" href="#!"> Sign Up</a>
+                <label for="nav-mobile-input" class="fa-regular fa-circle-xmark"></label>
             </div>
-          </header>
+            
+          </div>
         </div>
       </div>
       <!-- Hero page -->
       <div class="first-page">
-        <div class="content">
-          <div class="hero">
-            <div class="hero-img">
-              <img class="images" src="./assets/img/guy-lesson 1.jpg" alt="" />
-            </div>
-            <div class="hero-img-info">
-              <div class="colump">
-                <div class="info-colump">
-                  <img src="assets/img/hero-colump-1.jpg" alt="" />
-                  <div class="detail-colump">
-                    <p>20 Courses</p>
-                    <p>UI/UX Design</p>
-                  </div>
+        <div class="content grid wide">
+          <div class="hero row">
+            <div class="col l-6 m-12 c-12">
+              <div class="tong-hero">
+                <div class="hero-img">
+                  <img
+                    class="images"
+                    src="./assets/img/guy-lesson 1.jpg"
+                    alt=""
+                  />
                 </div>
-                <div class="info-colump">
-                  <img src="assets/img/hero-colump-2.jpg" alt="" />
-                  <div class="detail-colump">
-                    <p>20 Courses</p>
-                    <p>Development</p>
-                  </div>
-                </div>
-                <div class="info-colump">
-                  <img src="assets/img/hero-colump-3.jpg" alt="" />
-                  <div class="detail-colump">
-                    <p>30 Courses</p>
-                    <p>Marketing</p>
+                <div class="hero-img-info">
+                  <div class="colump">
+                    <div class="info-colump">
+                      <img src="assets/img/hero-colump-1.jpg" alt="" />
+                      <div class="detail-colump">
+                        <p>20 Courses</p>
+                        <p>UI/UX Design</p>
+                      </div>
+                    </div>
+                    <div class="info-colump">
+                      <img src="assets/img/hero-colump-2.jpg" alt="" />
+                      <div class="detail-colump">
+                        <p>20 Courses</p>
+                        <p>Development</p>
+                      </div>
+                    </div>
+                    <div class="info-colump">
+                      <img src="assets/img/hero-colump-3.jpg" alt="" />
+                      <div class="detail-colump">
+                        <p>30 Courses</p>
+                        <p>Marketing</p>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="info-hero">
+            <div class="info-hero col l-6 m-12 c-12">
               <div class="hero-info">
                 <h1>Learn without limits and spread knowledge.</h1>
                 <p>
@@ -108,8 +140,8 @@
       <!--======= Second page ======= -->
       <!-- Header popular -->
       <div id="courses" class="popular">
-        <div class="content">
-          <div class="header-popular">
+        <div class="content grid wide">
+          <div class="header-popular row">
             <div class="intro-popular">
               <h2>Our popular courses</h2>
               <p>
@@ -122,77 +154,85 @@
               <img src="./assets/img/icon-next-page.svg" alt="" />
             </div>
           </div>
+
           <!-- List popular -->
-          <div class="menu-popular">
+          <div class="menu-popular row">
             <!-- Course 1 -->
-            <div class="info-menu">
-              <img
-                class="img-info-menu"
-                src="./assets/img/ronaldo.jpg"
-                alt=""
-              />
-              <div class="sub-menu">
-                <div class="sub-img">
-                  <h3>Basic web design</h3>
-                  <img src="./assets/img/Rating.jpg" alt="" />
-                </div>
-                <p>
-                  Get the best course, gain knowledge and shine for your future
-                  career.
-                </p>
-                <div class="btn-buy-menu">
-                  <strong>$120.75</strong>
-                  <a class="btn buy-menu" href="#!">Book Now</a>
+            <div class="col l-4 m-6 c-12">
+              <div class="info-menu ">
+                <img
+                  class="img-info-menu"
+                  src="./assets/img/ronaldo.jpg"
+                  alt=""
+                />
+                <div class="sub-menu">
+                  <div class="sub-img">
+                    <h3>Basic web design</h3>
+                    <img src="./assets/img/Rating.jpg" alt="" />
+                  </div>
+                  <p>
+                    Get the best course, gain knowledge and shine for your future
+                    career.
+                  </p>
+                  <div class="btn-buy-menu">
+                    <strong>$120.75</strong>
+                    <a class="btn buy-menu" href="#!">Book Now</a>
+                  </div>
                 </div>
               </div>
-            </div>
+            </div class="col l-4 m-6 c-12">
             <!-- Course 2 -->
-            <div class="info-menu">
-              <img class="img-info-menu" src="./assets/img/./dell.jpg" alt="" />
-              <div class="sub-menu">
-                <div class="sub-img">
-                  <h3>UI/UX design</h3>
-                  <img src="./assets/img/Rating.jpg" alt="" />
-                </div>
-                <p>
-                  Get the best course, gain knowledge and shine for your future
-                  career.
-                </p>
-                <div class="btn-buy-menu">
-                  <strong>$120.75</strong>
-                  <a class="btn buy-menu" href="#!">Book Now</a>
+            <div class="col l-4 m-6 c-12">
+              <div class="info-menu">
+                <img class="img-info-menu" src="./assets/img/./dell.jpg" alt="" />
+                <div class="sub-menu">
+                  <div class="sub-img">
+                    <h3>UI/UX design</h3>
+                    <img src="./assets/img/Rating.jpg" alt="" />
+                  </div>
+                  <p>
+                    Get the best course, gain knowledge and shine for your future
+                    career.
+                  </p>
+                  <div class="btn-buy-menu">
+                    <strong>$120.75</strong>
+                    <a class="btn buy-menu" href="#!">Book Now</a>
+                  </div>
                 </div>
               </div>
-            </div>
+            </div >
             <!-- Course 3 -->
-            <div class="info-menu">
-              <img
-                class="img-info-menu"
-                src="./assets/img/cr7-reuters-1188.jpg"
-                alt=""
-              />
-              <div class="sub-menu">
-                <div class="sub-img">
-                  <h3>Web App design</h3>
-                  <img src="./assets/img/Rating.jpg" alt="" />
-                </div>
-                <p>
-                  Get the best course, gain knowledge and shine for your future
-                  career.
-                </p>
-                <div class="btn-buy-menu">
-                  <strong>$120.75</strong>
-                  <a class="btn buy-menu" href="#!">Book Now</a>
+            <div class="col l-4 m-6 c-12">
+              <div class="info-menu  ">
+                <img
+                  class="img-info-menu"
+                  src="./assets/img/cr7-reuters-1188.jpg"
+                  alt=""
+                />
+                <div class="sub-menu">
+                  <div class="sub-img">
+                    <h3>Web App design</h3>
+                    <img src="./assets/img/Rating.jpg" alt="" />
+                  </div>
+                  <p>
+                    Get the best course, gain knowledge and shine for your future
+                    career.
+                  </p>
+                  <div class="btn-buy-menu">
+                    <strong>$120.75</strong>
+                    <a class="btn buy-menu" href="#!">Book Now</a>
+                  </div>
                 </div>
               </div>
-            </div>
+            </div >
+            
           </div>
         </div>
       </div>
       <!-- ======= Third page =======  -->
       <!-- Reviewer -->
       <div id="reviews" class="review">
-        <div class="content">
+        <div class="content grid wide">
           <div class="reviewer">
             <img
               class="img-reviewer"
@@ -222,13 +262,13 @@
       <!-- ======= Fourth page ======= -->
       <!-- Platform -->
       <div class="platform">
-        <div class="content">
-          <div class="learner">
-            <div class="img-learner">
+        <div class="content grid wide">
+          <div class="learner row">
+            <div class="img-learner col l-6 m-12 c-12">
               <img src="./assets/img/img-leaner-1.jpg" alt="" />
               <img src="./assets/img/img-leaner-2.jpg" alt="" />
             </div>
-            <div class="info-platform">
+            <div class="info-platform col l-6 m-12 c-12">
               <h2>Learner outcomes through our awesome platform</h2>
               <p>
                 87% of people learning for professional development report
@@ -240,8 +280,8 @@
             </div>
           </div>
           <!-- Lesson -->
-          <div class="lesson">
-            <div class="info-lesson">
+          <div class="lesson row">
+            <div class="info-lesson col l-6 m-12 c-12">
               <h2>
                 Take the next step toward your personal and professional goals
                 with Lesson.
@@ -252,14 +292,14 @@
               </p>
               <a class="btn" href="">Join Now</a>
             </div>
-            <img src="./assets/img/images-lesson.jpg" alt="" />
+            <img class="img-lesson col l-6 m-12 c-12" src="./assets/img/images-lesson.jpg" alt="" />
           </div>
         </div>
       </div>
       <!-- ======= Fifth page =======  -->
       <!-- Header our blog -->
       <div id="blog" class="our-blog">
-        <div class="content">
+        <div class="content grid wide">
           <div class="info-blog">
             <h2>Our blog</h2>
             <p>
@@ -268,73 +308,79 @@
             </p>
           </div>
           <!-- List blog -->
-          <div class="colump-blog">
+          <div class="colump-blog row">
             <!-- Blog 1 -->
-            <div class="info-colump-blog">
-              <img
-                class="img-info-colump"
-                src="./assets/img/colump-blog-1.jpg"
-                alt=""
-              />
-              <div class="sub-colump">
-                <div class="sub-img-blog">
-                  <img src="./assets/img/circle-review.-yellow.svg" alt="" />
-                  <p>21 November 2021</p>
-                </div>
-                <div class="line"></div>
-                <a href="#!"
-                  >How to become a pro web designer in 2022 and get remot
-                  job?</a
-                >
-                <div class="btn-read">
-                  <a class="btn btn-read" href="#!">Read more</a>
+           <div class="col l-4 m-6 c-12">
+              <div class="info-colump-blog ">
+                <img
+                  class="img-info-colump"
+                  src="./assets/img/colump-blog-1.jpg"
+                  alt=""
+                />
+                <div class="sub-colump">
+                  <div class="sub-img-blog">
+                    <img src="./assets/img/circle-review.-yellow.svg" alt="" />
+                    <p>21 November 2021</p>
+                  </div>
+                  <div class="line"></div>
+                  <a href="#!"
+                    >How to become a pro web designer in 2022 and get remot
+                    job?</a
+                  >
+                  <div class="btn-read">
+                    <a class="btn btn-read" href="#!">Read more</a>
+                  </div>
                 </div>
               </div>
-            </div>
+           </div >
             <!-- Blog 2 -->
-            <div class="info-colump-blog">
-              <img
-                class="img-info-colump"
-                src="./assets/img/colump-blog-2.jpg"
-                alt=""
-              />
-              <div class="sub-colump">
-                <div class="sub-img-blog">
-                  <img src="./assets/img/circle-review.-yellow.svg" alt="" />
-                  <p>21 November 2021</p>
-                </div>
-                <div class="line"></div>
-                <a href="#!"
-                  >How to become a pro web designer in 2022 and get remot
-                  job?</a
-                >
-                <div class="btn-read">
-                  <a class="btn btn-read" href="#!">Read more</a>
+           <div class="col l-4 m-6 c-12">
+              <div class="info-colump-blog ">
+                <img
+                  class="img-info-colump"
+                  src="./assets/img/colump-blog-2.jpg"
+                  alt=""
+                />
+                <div class="sub-colump">
+                  <div class="sub-img-blog">
+                    <img src="./assets/img/circle-review.-yellow.svg" alt="" />
+                    <p>21 November 2021</p>
+                  </div>
+                  <div class="line"></div>
+                  <a href="#!"
+                    >How to become a pro web designer in 2022 and get remot
+                    job?</a
+                  >
+                  <div class="btn-read">
+                    <a class="btn btn-read" href="#!">Read more</a>
+                  </div>
                 </div>
               </div>
-            </div>
+           </div >
             <!-- Blog 3 -->
-            <div class="info-colump-blog">
-              <img
-                class="img-info-colump"
-                src="./assets/img/colump-blog-3.jpg"
-                alt=""
-              />
-              <div class="sub-colump">
-                <div class="sub-img-blog">
-                  <img src="./assets/img/circle-review.-yellow.svg" alt="" />
-                  <p>21 November 2021</p>
-                </div>
-                <div class="line"></div>
-                <a href="#!"
-                  >How to become a pro web designer in 2022 and get remot
-                  job?</a
-                >
-                <div class="btn-read">
-                  <a class="btn btn-read" href="#!">Read more</a>
+            <div class="col l-4 m-6 c-12">
+              <div class="info-colump-blog">
+                <img
+                  class="img-info-colump"
+                  src="./assets/img/colump-blog-3.jpg"
+                  alt=""
+                />
+                <div class="sub-colump">
+                  <div class="sub-img-blog">
+                    <img src="./assets/img/circle-review.-yellow.svg" alt="" />
+                    <p>21 November 2021</p>
+                  </div>
+                  <div class="line"></div>
+                  <a href="#!"
+                    >How to become a pro web designer in 2022 and get remot
+                    job?</a
+                  >
+                  <div class="btn-read">
+                    <a class="btn btn-read" href="#!">Read more</a>
+                  </div>
                 </div>
               </div>
-            </div>
+            </div >
           </div>
           <!-- Button read -->
           <div class="action-reviewer">
@@ -347,59 +393,64 @@
       <!-- ======= Last page =======  -->
       <!-- Footer -->
       <div class="footer">
-        <div class="content">
-          <div class="footer-content">
-            <div class="info-footer">
-              <img src="./assets/img/Lesson. -white.svg" alt="" />
-              <p>
-                Need to help for your dream Career? trust us. With Lesson, study
-                becomes a lot easier with us.
-              </p>
-              <!-- Social media -->
-              <div class="icon-footer">
-                <a href="#!"><img src="./assets/img/Twitter.svg" alt="" /></a>
-                <a href="#!"><img src="./assets/img/Facebook.svg" alt="" /></a>
-                <a href="#!"><img src="./assets/img/Linkedin.svg" alt="" /></a>
-                <a href="#!"><img src="./assets/img/Instagram.svg" alt="" /></a>
-              </div>
-            </div>
-            <!-- Contact -->
-            <div class="colump-footer">
-              <div class="colump-footer-1">
-                <h3>Company</h3>
-                <div class="line"></div>
-                <a href="#!">About US</a>
-                <a href="#!">Features</a>
-                <a href="#!">Our Pricing</a>
-                <a href="#!">Latest News</a>
-              </div>
-              <div class="colump-footer-2">
-                <h3>Support</h3>
-                <div class="line"></div>
-                <a href="#!">FAQ’s</a>
-                <a style="width: 137px" href="#!">Terms & Conditions</a>
-                <a href="#!">Privacy Policy</a>
-                <a href="#!">Contact Us</a>
-              </div>
-              <div class="colump-footer-3">
-                <h3>Address</h3>
-                <div class="line"></div>
+        <div class="content grid wide">
+       <div class="row">
+            <div class="footer-content">
+              <div class="info-footer col l-2 m-6 c-12">
+                <img src="./assets/img/Lesson. -white.svg" alt="" />
                 <p>
-                  <strong>Location</strong> : 27 Division St, New York, NY
-                  10002, USA
+                  Need to help for your dream Career? trust us. With Lesson, study
+                  becomes a lot easier with us.
                 </p>
-                <a href="mailto:email@gmail.com"
-                  ><strong>Email</strong> : email@gmail.com</a
-                >
-                <a href="tel:0001234567890"
-                  ><strong>Phone</strong> : + 000 1234 567 890</a
-                >
+                <!-- Social media -->
+                <div class="icon-footer">
+                  <a href="#!"><img src="./assets/img/Twitter.svg" alt="" /></a>
+                  <a href="#!"><img src="./assets/img/Facebook.svg" alt="" /></a>
+                  <a href="#!"><img src="./assets/img/Linkedin.svg" alt="" /></a>
+                  <a href="#!"><img src="./assets/img/Instagram.svg" alt="" /></a>
+                </div>
+              </div>
+              <!-- Contact -->
+              <div class="colump-footer col l-10 m-6 c-12">
+                <div class="row">
+                  <div class="colump-footer-1 col l-4 m-6 c-12">
+                    <h3>Company</h3>
+                    <div class="line"></div>
+                    <a href="#!">About US</a>
+                    <a href="#!">Features</a>
+                    <a href="#!">Our Pricing</a>
+                    <a href="#!">Latest News</a>
+                  </div>
+                  <div class="colump-footer-2 col l-4 m-6 c-12">
+                    <h3>Support</h3>
+                    <div class="line"></div>
+                    <a href="#!">FAQ’s</a>
+                    <a style="width: 137px" href="#!">Terms & Conditions</a>
+                    <a href="#!">Privacy Policy</a>
+                    <a href="#!">Contact Us</a>
+                  </div>
+                  <div class="colump-footer-3 col l-4 m-6 c-12">
+                    <h3>Address</h3>
+                    <div class="line"></div>
+                    <p>
+                      <strong>Location</strong> : 27 Division St, New York, NY
+                      10002, USA
+                    </p>
+                    <a href="mailto:email@gmail.com"
+                      ><strong>Email</strong> : email@gmail.com</a
+                    >
+                    <a href="tel:0001234567890"
+                      ><strong>Phone</strong> : + 000 1234 567 890</a
+                    >
+                  </div>
+                </div >
               </div>
             </div>
-          </div>
-          <div class="line-footer"></div>
+       </div >
+          <div class="line-footer col m-12 c-12"></div>
 
           <div class="copyright">
+            
             <p>Copyright ©2022 webdesign.gdn All rights reserved</p>
           </div>
         </div>

@@ -23,10 +23,8 @@ h2 {
   background: #fffcf4;
   padding-bottom: 65px;
 }
-.content {
-  width: 1170px;
-  margin-left: auto;
-  margin-right: auto;
+.grid.wide.content {
+  max-width: 1170px;
 }
 
 .btn {
@@ -98,7 +96,7 @@ header .logo {
 
 .sidebar-action a {
   font-weight: 400;
-  font-size: 16px;
+  font-size: 1.6rem;
   color: #5f5b53;
 }
 
@@ -107,10 +105,13 @@ header .logo {
 }
 .btn.sidebar-btn {
   font-weight: 600;
-  font-size: 16px;
+  font-size: 1.6rem;
   color: #ffffff;
 }
 /* hero */
+.tong-hero {
+  display: flex;
+}
 .first-page {
   padding-top: 14px;
 }
@@ -124,12 +125,23 @@ header .logo {
   width: 50%;
 }
 .hero-img {
+  width: 478px;
+  margin: auto;
+}
+
+.images {
   position: relative;
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 20px;
 }
 .hero-img-info {
+  display: none;
   position: absolute;
   width: 270px;
-  height: 244px;
+  max-width: 100%;
+  height: auto;
   background: #ffffff;
   border-radius: 12px;
   margin-left: 300px;
@@ -138,6 +150,8 @@ header .logo {
 
 .colump {
   margin: 24px 58px 24px 24px;
+  max-width: 100%;
+  height: auto;
 }
 .info-colump {
   display: flex;
@@ -146,14 +160,14 @@ header .logo {
 
 .colump p:first-child {
   font-weight: 400;
-  font-size: 14px;
+  font-size: 1.4rem;
   line-height: 26px;
   color: #5f5b53;
 }
 
 .colump p:last-child {
   font-weight: 600;
-  font-size: 18px;
+  font-size: 1.8rem;
   line-height: 30px;
   color: #171100;
 }
@@ -165,23 +179,17 @@ header .logo {
 }
 .detail-colump {
   margin-left: 16px;
-}
-
-.images {
-  width: 470px;
-  height: 685px;
-  object-fit: cover;
-  border-radius: 20px;
+  max-width: 100%;
+  height: auto;
 }
 
 .info-hero {
-  margin-left: 230px;
   margin-top: 64px;
 }
 
 .info-hero h1 {
   font-weight: 700;
-  font-size: 58px;
+  font-size: 5.8rem;
   line-height: 68px;
   letter-spacing: -0.02em;
   color: #171100;
@@ -189,7 +197,7 @@ header .logo {
 
 .hero-info p {
   font-weight: 400;
-  font-size: 18px;
+  font-size: 1.8rem;
   margin-top: 22px;
   line-height: 30px;
   color: #5f5b53;
@@ -211,7 +219,7 @@ header .logo {
 
 .btn-hero {
   font-weight: 600;
-  font-size: 18px;
+  font-size: 1.8rem;
   color: #ffffff;
 }
 .btn-watch {
@@ -223,7 +231,7 @@ header .logo {
 .btn-watch a:nth-child(2) {
   margin-top: 20px;
   font-weight: 600;
-  font-size: 18px;
+  font-size: 1.8rem;
   color: #171100;
 }
 .data-hero {
@@ -239,7 +247,7 @@ header .logo {
   font-family: "Sen", sans-serif;
   margin-right: 8px;
   font-weight: 700;
-  font-size: 44px;
+  font-size: 4.4rem;
   color: #171100;
 }
 
@@ -258,33 +266,32 @@ header .logo {
 
 .intro-popular h2 {
   font-weight: 700;
-  font-size: 38px;
+  font-size: 3.8rem;
   letter-spacing: -0.02em;
   color: #171100;
 }
 
 .intro-popular p {
   display: block;
-  width: 458px;
+  width: 100%;
+  max-width: 100%;
   font-weight: 400;
-  font-size: 18px;
+  font-size: 1.6rem;
   line-height: 30px;
   color: #5f5b53;
   margin-top: 16px;
 }
 /* List popular */
 .menu-popular {
-  display: flex;
-  justify-content: space-between;
   margin-top: 55px;
 }
 .info-menu {
-  width: 370px;
   border: 1px solid #e2dfda;
   border-radius: 12px;
+  margin-bottom: 10px;
 }
 .img-info-menu {
-  width: 370px;
+  width: 100%;
   height: 278px;
   object-fit: cover;
   border-radius: 12px 12px 0px 0px;
@@ -298,14 +305,14 @@ header .logo {
 }
 .sub-img h3 {
   font-weight: 600;
-  font-size: 18px;
+  font-size: 1.8rem;
   color: #171100;
 }
 
 .info-menu p {
   margin-top: 6px;
   font-weight: 400;
-  font-size: 14px;
+  font-size: 1.4rem;
   line-height: 26px;
   color: #5f5b53;
 }
@@ -318,13 +325,13 @@ header .logo {
 }
 .btn-buy-menu strong {
   font-weight: 600;
-  font-size: 18px;
+  font-size: 1.8rem;
   color: #171100;
 }
 
 .btn.buy-menu {
   font-weight: 600;
-  font-size: 14px;
+  font-size: 1.4rem;
   text-align: center;
   color: #ffffff;
 }
@@ -349,13 +356,13 @@ header .logo {
 }
 .reviewer h2 {
   font-weight: 700;
-  font-size: 24px;
+  font-size: 2.4rem;
   color: #f7f7f7;
   margin-top: 18px;
 }
 .reviewer p {
   font-weight: 400;
-  font-size: 14px;
+  font-size: 1.4rem;
   color: #bfbcb3;
   margin-top: 12px;
   margin-left: auto;
@@ -373,7 +380,7 @@ header .logo {
   font-weight: 400;
   font-style: italic;
   margin-left: 30px;
-  font-size: 26px;
+  font-size: 2.6rem;
   line-height: 40px;
   color: #ffffff;
 }
@@ -398,22 +405,23 @@ header .logo {
 .img-learner img:first-child {
   margin-top: 34px;
   margin-right: 30px;
+  display: none;
 }
 
 .img-learner img {
-  width: 270px;
+  width: 100%;
+  max-width: 100%;
   height: 404px;
   object-fit: cover;
 }
 /* Lesson */
 .info-platform {
-  margin-left: 130px;
   margin-top: 58px;
 }
 
 .info-platform h2 {
   font-weight: 700;
-  font-size: 38px;
+  font-size: 3.8rem;
   line-height: 48px;
   letter-spacing: -0.02em;
   color: #171100;
@@ -421,7 +429,7 @@ header .logo {
 
 .info-platform p {
   font-weight: 400;
-  font-size: 16px;
+  font-size: 1.6rem;
   line-height: 28px;
   color: #5f5b53;
   margin-top: 16px;
@@ -434,7 +442,7 @@ header .logo {
   display: block;
   margin-top: 32px;
   font-weight: 600;
-  font-size: 16px;
+  font-size: 1.6rem;
   text-align: center;
   color: #ffffff;
 }
@@ -444,23 +452,20 @@ header .logo {
   margin-top: 200px;
 }
 
-.lesson img {
-  width: 470px;
+.lesson.row .img-lesson {
+  max-width: 100%;
   height: 440px;
   object-fit: cover;
   border-radius: 20px;
-  margin-left: 130px;
+  margin-top: 15px;
 }
-.info-lesson {
-  width: 50%;
-}
+
 .info-lesson h2 {
   font-weight: 700;
-  font-size: 38px;
+  font-size: 3.8rem;
   line-height: 48px;
   letter-spacing: -0.02em;
   color: #171100;
-  margin-top: 71px;
 }
 .info-lesson p {
   margin-top: 16px;
@@ -470,7 +475,7 @@ header .logo {
   display: block;
   margin-top: 32px;
   font-weight: 600;
-  font-size: 16px;
+  font-size: 1.6rem;
   text-align: center;
   color: #ffffff;
 }
@@ -478,7 +483,7 @@ header .logo {
 /* Header our blog */
 
 .our-blog {
-  margin-top: 200px;
+  margin-top: 140px;
   background-color: #fffcf4;
 }
 
@@ -492,22 +497,22 @@ header .logo {
 
 /* List blog */
 .info-colump-blog {
-  width: 370px;
   border: 1px solid #e2dfda;
   border-radius: 16px;
   background: #ffffff;
+  margin-top: 20px;
 }
 .info-blog h2 {
   font-weight: 700;
-  font-size: 38px;
+  font-size: 3.8rem;
   letter-spacing: -0.02em;
   color: #130606;
 }
 .info-blog p {
   display: inline-block;
-  width: 448px;
+  width: 100%;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 1.6rem;
   color: #696262;
   margin-top: 16px;
 }
@@ -519,8 +524,8 @@ header .logo {
 }
 
 .img-info-colump {
-  width: 370px;
-  height: 250px;
+  width: 100%;
+  height: auto;
   object-fit: cover;
   border-radius: 12px 12px 0px 0px;
 }
@@ -536,7 +541,7 @@ header .logo {
 .sub-img-blog p {
   margin-left: 4px;
   font-weight: 400;
-  font-size: 14px;
+  font-size: 1.4rem;
   color: #5f5b53;
 }
 
@@ -551,7 +556,7 @@ header .logo {
 
 .sub-colump a {
   font-weight: 600;
-  font-size: 16px;
+  font-size: 1.6rem;
   line-height: 28px;
   color: #171100;
 }
@@ -565,7 +570,7 @@ header .logo {
   height: 50px;
   margin-top: 12px;
   font-weight: 600;
-  font-size: 14px;
+  font-size: 1.4rem;
   align-items: center;
   justify-content: center;
   color: #ffffff;
@@ -583,15 +588,13 @@ header .logo {
   background: #2e2100;
 }
 .footer .content {
-  padding-top: 96px;
+  padding-top: 50px;
 }
-.footer-content {
-  display: flex;
-}
+
 .info-footer p {
   width: 267px;
   font-weight: 400;
-  font-size: 14px;
+  font-size: 1.4rem;
   line-height: 26px;
   color: #bfbcb2;
   margin-top: 18px;
@@ -609,21 +612,26 @@ header .logo {
 
 .colump-footer {
   display: flex;
-  margin-left: 145px;
+  margin-top: 30px;
 }
 
 .colump-footer h3 {
   font-weight: 600;
-  font-size: 16px;
+  font-size: 1.6rem;
   color: #ffffff;
 }
 
 .colump-footer a {
   display: block;
+  width: 100%;
   font-weight: 400;
-  font-size: 14px;
+  font-size: 1.4rem;
   padding-bottom: 12px;
   color: #bfbcb2;
+}
+.colump-footer-1 a,
+.colump-footer-2 a {
+  width: 100px;
 }
 
 .colump-footer .line {
@@ -632,11 +640,6 @@ header .logo {
   margin-top: 14px;
   margin-bottom: 28px;
   background: #59554b;
-}
-
-.colump-footer-2 {
-  margin-left: 130px;
-  margin-right: 130px;
 }
 
 .footer .line-footer {
@@ -650,18 +653,90 @@ header .logo {
   margin-top: 28px;
   text-align: center;
   font-weight: 400;
-  font-size: 14px;
+  font-size: 1.4rem;
   color: #807d74;
   padding-bottom: 28px;
 }
+.colump-footer-3 {
+  margin-top: 20px;
+}
 .colump-footer-3 p {
-  font-size: 14px;
+  font-size: 1.4rem;
   line-height: 26px;
   color: #bfbcb2;
   margin-bottom: 12px;
 }
 .colump-footer-3 strong {
   font-weight: 600;
-  font-size: 14px;
+  font-size: 1.4rem;
   color: #ffffff;
+}
+
+/* nav menu mobile */
+
+.fa-solid.fa-bars {
+  font-size: 5rem;
+  margin: 20px 20px;
+  padding-top: 10px;
+  cursor: pointer;
+}
+
+.overlay {
+  position: fixed;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  top: 0;
+  display: none;
+  background-color: rgba(0, 0, 0, 0.3);
+  animation: fadeIn linear 0.3s;
+}
+
+.sidebar-mobile {
+  display: flex;
+  transform: translateX(-100%);
+  flex-direction: column;
+  align-items: center;
+  position: fixed;
+  background-color: #fbab7e;
+  background-image: linear-gradient(62deg, #fbab7e 0%, #f7ce68 100%);
+  opacity: 0.9;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  top: 0;
+  width: 350px;
+  opacity: 0;
+  transition: transform linear 0.2s, opacity linear 0.5s;
+}
+
+.sidebar-mobile a {
+  margin-top: 50px;
+  color: black;
+}
+.fa-regular.fa-circle-xmark {
+  font-size: 50px;
+  position: absolute;
+  margin-top: 10px;
+  left: 10px;
+  cursor: pointer;
+}
+
+.nav-input:checked ~ .overlay {
+  display: block;
+}
+
+.nav-input:checked ~ .sidebar-mobile {
+  transform: translateX(0);
+  opacity: 0.9;
+}
+
+/* animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  } 
+  to {
+    opacity: 1;
+  }
 }
