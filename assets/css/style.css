@@ -1,6 +1,9 @@
 * {
   box-sizing: border-box;
 }
+main {
+  overflow: hidden;
+}
 html {
   scroll-behavior: smooth;
 }
@@ -63,6 +66,7 @@ h2 {
 
 /* header */
 .header-fixed {
+  overflow: hidden;
   position: sticky;
   top: -28px;
   z-index: 1;
@@ -673,6 +677,21 @@ header .logo {
 }
 
 /* nav menu mobile */
+.header-mobile {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header-mobile .logo {
+  margin-right: 15px;
+}
+.btn-signup-mobile {
+  padding-top: 20px;
+  margin-right: 10px;
+}
+.btn-signup-mobile a {
+  padding: 15px 25px;
+}
 
 .fa-solid.fa-bars {
   font-size: 5rem;
@@ -698,8 +717,8 @@ header .logo {
   flex-direction: column;
   align-items: center;
   position: fixed;
-  background-color: #fbab7e;
-  background-image: linear-gradient(62deg, #fbab7e 0%, #f7ce68 100%);
+  background-color: black;
+  background-image: linear-gradient(62deg, #bd8a21 0%, #f7ce68 100%);
   opacity: 0.9;
   right: 0;
   left: 0;
@@ -711,8 +730,21 @@ header .logo {
 }
 
 .sidebar-mobile a {
-  margin-top: 50px;
+  display: flex;
+
+  margin-top: 70px;
+  width: 100%;
+  height: 50px;
+  justify-content: center;
+  align-items: center;
   color: black;
+}
+.sidebar-mobile a:hover {
+  background-color: #e8ebed;
+}
+
+.sidebar-mobile .btn-signup-mobile a:hover {
+  background-color: rgb(224, 224, 107);
 }
 .fa-regular.fa-circle-xmark {
   font-size: 50px;
@@ -735,7 +767,7 @@ header .logo {
 @keyframes fadeIn {
   from {
     opacity: 0;
-  } 
+  }
   to {
     opacity: 1;
   }
